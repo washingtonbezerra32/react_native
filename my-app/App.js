@@ -1,11 +1,11 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import {index} from "./src/index";
+import Index from "./src/index";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      index
+      <Index />
       <Text>Open up App.js to start working on your app!test</Text>
     </View>
   );
