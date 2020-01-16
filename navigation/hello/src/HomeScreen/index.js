@@ -1,18 +1,19 @@
 import React, { Component } from 'react'
 import { Text, StyleSheet, View, Button } from 'react-native'
 
-export default class HomeScreen extends React.Component {
-  render() {
+export default function HomeScreen({navigation}) {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
         <Text>Tela Principal</Text>
         <Button
           title="Detalhes"
-          onPress={() => this.props.navigation.navigate('Details')}
+        onPress={() => navigation.navigate('Details',{
+          itemId: 86,
+          message: 'O Maria Fernanda é foda',
+        })}
         />
       </View>
     );
-  }
 }
 
 
