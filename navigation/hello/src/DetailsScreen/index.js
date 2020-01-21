@@ -58,5 +58,12 @@ const styles = StyleSheet.create({
 
 
 DetailsScreen.navigationOptions = {
-  title: 'Detalhes'
+  title: 'Detalhes',
+  headerStyle: {
+    backgroundColor: '#f4511e',
+  },
+  headerTintColor: '#fff',
+  headerTitleStyle: {
+    fontWeight: 'bold',
+  },
 }
