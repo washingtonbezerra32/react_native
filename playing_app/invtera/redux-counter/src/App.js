@@ -23,7 +23,7 @@ function App() {
       <div className='App' >
         <Counter />
         <DisplayCounter />
-        <Ola nome={'Curso'} />
+        <Ola nome={'Washington Filho'} />
 
 
       </div>

@@ -10,7 +10,7 @@ Ola.protoTypes = {
 }
 
 Ola.defaultProps = {
-    nome: 'Fulano'
+    nome: 'Washington'
 }
 
 export default Ola

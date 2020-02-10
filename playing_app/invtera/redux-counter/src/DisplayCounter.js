@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 
 export function DisplayCounter({ count }) {
-    return (<p>O Contador está em {count}</p>)
+    return (<p>Contador Atual:  {count}</p>)
 }
 
 function mapStateToProps(state) {
