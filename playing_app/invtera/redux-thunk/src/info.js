@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { loadData } from './action'
+import { loadData } from './actions'
 
 class Info extends React.Component {
   componentDidMount () {
@@ -10,7 +10,7 @@ class Info extends React.Component {
   render () {
     if (this.props.isFetching) { return <span>Loading</span> }
     if (this.props.error) { return <span>Error</span> }
-    return <span>info: {JSON.stringify(this.props.data.origin)}</span>
+    return <span>info: {JSON.stringify(this.props.data['origin'])}</span>
   }
 }
 

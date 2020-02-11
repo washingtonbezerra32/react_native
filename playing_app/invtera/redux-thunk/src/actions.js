@@ -16,6 +16,7 @@ export function loadDataSuccess(data){
     return {
         type: 'LOAD_DATA_SUCCESS',
         data
+        
     }
 }
 
@@ -49,6 +50,7 @@ export function loadUASucess(data){
 }
 
 export function loadUA(axios) {
+    console.log('########## loadUA(axios)')
     return dispacth => {
         dispacth(loadDataRequest())
         axios.get('http://httpbin.org/user-agent').then(({data}) => dispacth(loadUASucess(data)))
